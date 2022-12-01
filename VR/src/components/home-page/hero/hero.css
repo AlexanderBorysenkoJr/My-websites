@@ -1,0 +1,248 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+    position: absolute;
+    width: 675px;
+    height: 651px;
+    border-radius: 50%;
+    left: -304px;
+    top: 120px;
+    z-index: -10;
+    filter: blur(90px);
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 36px;
+    margin-top: 10px;
+}
+
+.hero-main-text {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.hero-main-text__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    margin-top: 74px;
+}
+
+.hero-main-text__caption {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 20px;
+    max-width: 312px;
+}
+
+.hero-main-text-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.hero-main-text-footer__btn {
+    background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 12px 13px;
+    color: #FFFFFF;
+}
+
+.hero-main-text-footer__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+}
+
+.people-online {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.people-online__list {
+    display: flex;
+    justify-content: column;
+}
+
+.people-online__list>.people-online__list-item:not(:first-child) {
+    margin-left: -5px;
+}
+
+.people-online__img {
+    width: 32px;
+    height: 32px;
+}
+
+.people-figure__img {
+    margin-left: 16px;
+    margin-right: 9px;
+}
+
+.people-text__online-status {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.hero-main-photo {
+    position: relative;
+}
+
+.hero-main-photo__img {
+    max-width: 420px;
+}
+
+.hero-main-photo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    position: absolute;
+    top: 305px;
+    left: 65px;
+}
+
+.hero-main-photo-text__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.hero-main-photo-text__underline {
+    max-width: 151px;
+}
+
+.hero-main-photo-text__caption {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 203px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero::after {
+        display: none;
+    }
+
+    .hero-main {
+        align-items: center;
+    }
+
+    .hero-main-text {
+        align-items: center;
+    }
+
+    .hero-main-text__title {
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .hero-main-text-footer__btn {
+        padding: 11px 47px;
+    }
+
+    .hero-main-text__caption {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-main-text-footer__link {
+        padding: 11px 43px;
+        border-radius: 3px;
+        border: 1px solid;
+        border-color: #B936F5;
+        color: #B936F5;
+    }
+
+    .hero-main-text__title {
+        font-size: 24px;
+        margin-top: 13px;
+        line-height: 32px;
+    }
+
+    .hero-main-text__caption {
+        margin-top: 8px;
+        max-width: 360px;
+    }
+
+    .hero-main {
+        gap: 24px;
+    }
+
+    .hero-main-photo__img {
+        max-width: 352px;
+    }
+    .hero-main-photo-text {
+        top: 256px;
+        left: 58px;
+        gap: 15px;
+    }
+    .hero-main-photo-text__title {
+        font-size: 16px;
+    }
+    .hero-main-photo-text__caption {
+        font-size: 8px;
+        max-width: 160px;
+        margin-top: 3px;
+        line-height: 12px;
+    }
+    .hero-main-photo-text__underline {
+    max-width: 132px;
+    }
+    .hero-main-text-footer__btn {
+        padding: 11px 53px;
+    }
+    .hero-main-text-footer__link {
+        font-size: 9px;
+    }
+    .hero-main-text-footer {
+        gap:27px;
+    }
+}

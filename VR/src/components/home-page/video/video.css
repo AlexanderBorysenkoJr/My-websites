@@ -1,0 +1,53 @@
+.video {
+    margin-top: 56px;
+    background-color: #534686;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 64px 13px 36px;
+    border: 0.7px solid;
+    border-image: linear-gradient(179.04deg, #FFFFFF -12.91%, #AA14F0 99.18%);
+    clip-path: polygon(93% 0, 100% 31%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    gap: 230px;
+    position: relative;
+}
+
+.video__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.video__link {
+    border-radius: 7px 20px 7px 7px;
+}
+
+.video__img {
+    width: 164px;
+    height: 61px;
+}
+
+@media (max-width: 576px) {
+    .video__title {
+        font-size: 14px;
+    }
+    .video__img {
+        width: 92px;
+        height: 35px;
+        margin-right: 18px;
+
+    }
+    .video {
+        padding: 9px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video {
+        margin-top: 94px;
+        gap:36px;
+    }
+}

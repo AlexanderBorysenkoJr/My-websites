@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+}
+
+.header::before {
+    position: absolute;
+    content: "";
+    top: -270px;
+    left: -60px;
+    width: 570px;
+    height: 550px;
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+    z-index: -10;
+    filter: blur(50px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,80 @@
+.form-adding-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+    width: 560px;
+}
+
+.form-adding-card__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form-adding-card__input {
+    width: 100%;
+    box-sizing: border-box;
+    background: #000000;
+    border: 2px solid #C8D1E6;
+    border-radius: 5px;
+    padding: 18px 32px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.form-adding-card__input:nth-child(2) {
+    margin-top: 24px;
+}
+
+.form-adding-card__input:nth-child(3) {
+    margin-top: 16px;
+}
+
+.form-adding-card__input:nth-child(4) {
+    margin-top: 16px;
+}
+.form-adding-card__input:nth-child(5) {
+    margin-top: 16px;
+}
+
+.form-adding-card__btn {
+    padding: 10px 28px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    background-color: #9F62BB;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 576px) {
+    .form-adding-card {
+        width: 360px;
+    }
+}

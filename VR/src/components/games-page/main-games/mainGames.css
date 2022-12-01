@@ -1,0 +1,136 @@
+.games-list__text-game,
+.games-list__text-user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.games-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 27px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.games-list__item {
+    position: relative;
+    max-width: 280px;
+}
+
+.games-list__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 5px 5px;
+}
+
+.games-list__text {
+    background-color: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(11px);
+    border-radius: 0px 0px 5px 5px;
+    width: 256px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 12px;
+    justify-content: space-around;
+}
+
+.games-list__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 9px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.games-list__caption {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 9px;
+    letter-spacing: -0.02em;
+    color: #EFDEDE;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.games-list__empty {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.games-list__empty__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.games-pages-list {
+    margin-top: 30px;
+    margin-bottom: 37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+
+@media (max-width: 576px) {
+
+    .games-list__item:nth-child(6),
+    .games-list__item:nth-child(7),
+    .games-list__item:nth-child(8),
+    .games-list__item:nth-child(9),
+    .games-list__item:nth-child(10),
+    .games-list__item:nth-child(11),
+    .games-list__item:nth-child(12) {
+        display: none;
+    }
+
+    .games-list__item {
+        max-width: 355px;
+    }
+
+    .games-list {
+        margin-top: 24px;
+        gap: 24px;
+    }
+
+    .games-list__title {
+        font-size: 12px;
+    }
+
+    .games-list__caption {
+        font-size: 12px;
+    }
+
+    .games-list__text {
+        padding: 15px 12px;
+        width: 331px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .games-list__empty__text{
+        font-size: 30px;
+    }
+}

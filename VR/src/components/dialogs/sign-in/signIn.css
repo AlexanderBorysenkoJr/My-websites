@@ -1,0 +1,92 @@
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 36px auto;
+    max-width: 560px;
+    box-sizing: border-box;
+    animation-name: animate;
+    animation-duration: 1s;
+    z-index: 300;
+}
+
+.sign-in-form__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sign-in-form__input {
+    background: #000000;
+    border: 2px solid #C8D1E6;
+    border-radius: 5px;
+    padding: 16px 32px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    /* opacity: 0.5; */
+    width: 560px;
+    box-sizing: border-box;
+}
+
+.sign-in-form__btn {
+    background: #9F62BB;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 37px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.sign-in-form__input:nth-child(2) {
+    margin-top: 14px;
+}
+
+.sign-in-form__input:nth-child(3) {
+    margin-top: 17px;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 576px) {
+    .sign-in-form__btn {
+        padding: 11px 86px;
+        font-size: 11px;
+    }
+
+    .sign-in-form__title {
+        font-size: 15px;
+    }
+
+    .sign-in-form__input {
+        font-size: 12px;
+        padding: 9px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}

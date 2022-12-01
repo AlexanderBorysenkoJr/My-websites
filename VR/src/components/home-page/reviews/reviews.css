@@ -1,0 +1,222 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #AA14F0 -42.58%, rgba(170, 20, 240, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(185, 54, 245, 0) 100%);
+    border-radius: 7px;
+    gap: 18px;
+    margin-top: 31px;
+    padding: 26px 0px 9px 0px;
+    position: relative;
+}
+
+.reviews::after {
+    content: "";
+    position: absolute;
+    width: 370px;
+    height: 355px;
+    left: -200px;
+    top: -50px;
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+    z-index: -10;
+    filter: blur(40px);
+}
+
+.reviews-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.reviews-header__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.reviews-header__caption {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 328px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+.reviews-list__item {
+    background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #CB8DE8 -42.58%, rgba(203, 143, 232, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(199, 137, 228, 0) 100%);
+    backdrop-filter: blur(6px);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 17px 8px 8px;
+}
+
+.reviews-list__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    color: #FFFFFF;
+    max-width: 175px;
+    height: 48px;
+    margin-top: 6px;
+}
+
+.reviews-list__title-color {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: 0.07em;
+    color: #F7B603;
+    margin-right: 4px;
+}
+
+.reviews-list__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: 0.07em;
+    color: #E4E5E7;
+}
+
+.reviews-list-customer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+    margin-top: 6px;
+}
+
+.reviews-list-customer__img {
+    width: 18px;
+    height: 18px;
+}
+
+.reviews-list-customer__name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5px;
+    line-height: 9px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.reviews-list-customer__nick {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5px;
+    line-height: 9px;
+    letter-spacing: -0.02em;
+    color: #EB4468;
+
+}
+
+.reviews__left-arrow {
+    display: none;
+}
+.reviews__rigth-arrow {
+    display: none;
+}
+
+@media (max-width: 576px) {
+
+    .reviews {
+        margin-top: 40px;
+    }
+    .reviews::after {
+        display: none;
+    }
+    .reviews-header {
+        gap: 8px;
+    }
+    .reviews-list__item:nth-child(2),
+    .reviews-list__item:nth-child(3) {
+        display: none;
+    }
+
+    .reviews-list__item {
+        padding: 10px 22px 15px 22px;
+    }
+
+    .reviews-list__text {
+        max-width: 264px;
+        font-size: 10px;
+        margin-top: 19px
+    }
+
+    .reviews-list-customer__name {
+        font-size: 10px;
+    }
+
+    .reviews-list-customer__nick {
+        font-size: 10px;
+    }
+
+    .reviews-list-customer__img {
+        width: 39px;
+        height: 39px;
+    }
+
+    .reviews-list-customer {
+        margin-top: 22px;
+    }
+
+    .reviews-list-customer__text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .reviews-list__title {
+        font-size: 10px;
+    }
+
+    .reviews-list__title-color {
+        font-size: 10px;
+    }
+
+    .reviews-list__item {
+        position: relative;
+    }
+
+    .reviews__left-arrow {
+        display: block;
+        width: 9px;
+        height: 18px;
+        position: absolute;
+        bottom: 76px;
+        left: 4px;
+    }
+    .reviews__rigth-arrow {
+        display: block;
+        width: 9px;
+        height: 18px;
+        position: absolute;
+        bottom: 76px;
+        right: 4px;
+        rotate: 180deg;
+    }
+}
